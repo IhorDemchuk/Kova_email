@@ -1,0 +1,682 @@
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="width:100%;height: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;margin:0">
+
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1" name="viewport">
+   <meta name="x-apple-disable-message-reformatting">
+   <meta content="IE=edge" http-equiv="X-UA-Compatible">
+   <meta content="telephone=no" name="format-detection">
+   <title>Browse Abandonment</title>
+   <style type="text/css">
+      table,
+      tbody,
+      tr,
+      td {
+         border-collapse: collapse;
+      }
+
+      p,
+      a,
+      li {
+         font-family: 'Open Sans', sans-serif;
+         font-size: 16px;
+         color: #272727;
+         font-weight: 400;
+      }
+
+      p,
+      a {
+         margin: 0;
+      }
+
+      p {
+         line-height: 27px;
+      }
+
+      img {
+         display: block;
+         border: 0;
+         outline: none;
+         text-decoration: none;
+      }
+
+      a {
+         text-decoration: none;
+      }
+
+      a:hover {
+         text-decoration: underline;
+      }
+
+      .header_part,
+      .content_part {
+         background-color: #F0F9FA;
+      }
+
+      .desk_hidden {
+         display: none;
+         mso-hide: all;
+      }
+
+      .primary_btn:hover {
+         background-color: #20272D !important;
+      }
+
+      .secondary_btn:hover {
+         background-color: #0AB9D1 !important;
+      }
+
+      @media (max-width:600px) {
+         .mobile_hidden {
+            display: none !important;
+         }
+
+         .desk_hidden {
+            display: table !important;
+         }
+
+         .responsive_padding {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+         }
+
+         .header_part table,
+         .content_part table,
+         .footer_part table {
+            width: 100% !important;
+            max-width: 600px !important;
+         }
+
+         .adapt_disp_block {
+            display: block !important;
+         }
+
+         .adapt_disp_inl_block {
+            display: inline-block !important;
+         }
+
+         .adapt_fs13 {
+            font-size: 13px !important;
+         }
+
+         .adapt_w100 {
+            width: 100% !important;
+         }
+
+         .adapt_pb20 {
+            padding-bottom: 20px !important;
+         }
+
+         .adapt_pb25 {
+            padding-bottom: 25px !important;
+         }
+
+         .adapt_pb0 {
+            padding-bottom: 0px !important;
+         }
+
+         .adapt_pr10 {
+            padding-right: 10px !important;
+         }
+
+         .adapt_pr30 {
+            padding-right: 30px !important;
+         }
+
+         .adapt_pt20 {
+            padding-top: 20px !important;
+         }
+
+         .header_part .adapt_w_auto,
+         .content_part .adapt_w_auto,
+         .footer_part .adapt_w_auto {
+            width: auto !important;
+         }
+
+         .paragraph_header {
+            font-size: 24px !important;
+            line-height: 34px !important;
+         }
+
+         .content_img {
+            width: 100% !important;
+            height: auto !important;
+         }
+
+         .author_img,
+         .author_img_container {
+            width: 66px !important;
+         }
+
+         .author_name {
+            font-size: 20px !important;
+         }
+
+         .author_mail,
+         .author_tel {
+            font-size: 11px !important;
+         }
+
+         .va_base {
+            vertical-align: baseline !important;
+         }
+
+         .primary_btn,
+         .secondary_btn {
+            padding: 9px 0 !important;
+            width: 100% !important;
+            max-width: 190px !important;
+         }
+
+         .social_list .social_list_img {
+            width: 30px !important;
+         }
+      }
+   </style>
+
+<body
+   style="width:100%;height: 100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-family: 'Open Sans', sans-serif;padding:0;margin:0;">
+   <p style="display:none !important;font-size:0px;line-height:0;visibility:hidden;opacity:0;height:0;width:0;mso-hide:all"
+      class="preview_text">How much you should spend to create hybrid
+      office?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+   </p>
+   <table width="100%" cellspacing="0" cellpadding="0">
+      <tbody>
+         <tr>
+            <td align="center">
+               <table cellspacing="0" cellpadding="0" class="header_part">
+                  <tbody>
+                     <tr>
+                        <td class="responsive_padding" style="padding-left: 60px;padding-right: 30px;padding-top: 30px;"
+                           align="center">
+                           <table cellpadding="0" cellspacing="0">
+                              <tbody>
+                                 <tr>
+                                    <td width="590" align="center">
+                                       <table cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" width="280"
+                                                   class="adapt_disp_block adapt_w100 adapt_pb25">
+                                                   <a href="https://kova.uk.com/" target="_blank">
+                                                      <img
+                                                         src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/group_3673096_1.png"
+                                                         alt="logo" class="header_logo" width="150">
+                                                   </a>
+                                                </td>
+                                                <td align="center" width="150"
+                                                   class="adapt_disp_inl_block adapt_w_auto adapt_pr30">
+                                                   <table cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td style="padding-right: 10px;">
+                                                               <a href="tel:02081686241" style="text-decoration: none;">
+                                                                  <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/telephone_3_2.png"
+                                                                     alt="" width="12">
+                                                               </a>
+                                                            </td>
+                                                            <td>
+                                                               <a href="tel:02081686241"
+                                                                  style="font-size: 12px;line-height: 18px;"
+                                                                  class="adapt_fs13">
+                                                                  0208 168 6241
+                                                               </a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                                <td align="right" width="160" class="adapt_disp_inl_block adapt_w_auto">
+                                                   <table cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td style="padding-right: 10px;">
+                                                               <a href="#" style="text-decoration: none;"> <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/vector_3.png"
+                                                                     alt="" width="10">
+                                                               </a>
+                                                            </td>
+                                                            <td>
+                                                               <div
+                                                                  style="font-size: 12px;line-height: 18px;text-decoration: underline;"
+                                                                  class="adapt_fs13">
+                                                                  <a href="#"
+                                                                     style="font-size: 12px;line-height: 18px;text-decoration: underline;"
+                                                                     class="adapt_fs13">
+                                                                     London, United Kingdom
+                                                                  </a>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="content_part">
+                  <tbody>
+                     <tr>
+                        <td class="responsive_padding adapt_pt20" style="padding-left: 60px;padding-top: 35px;"
+                           align="center">
+                           <table cellpadding="0" cellspacing="0">
+                              <tbody>
+                                 <tr>
+                                    <td width="620" align="center">
+                                       <table cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="center">
+                                                   <table cellpadding="0" cellspacing="0" align="left" width="300">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td style="padding-bottom: 35px;">
+                                                               <table cellpadding="0" cellspacing="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td style="padding-bottom: 15px;">
+                                                                           <p style="font-size: 26px; font-weight: 700; line-height: 36px; font-family: 'Montserrat', sans-serif;"
+                                                                              class="paragraph_header">
+                                                                              What is a Hybrid
+                                                                              Office and how to create it?</p>
+                                                                        </td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td>
+                                                                           <p>The practice of working from
+                                                                              home has accelerated greatly due to
+                                                                              the pandemic, as a result the number of
+                                                                              employees with
+                                                                              flexible working hours with the
+                                                                              option of working from home have soared -
+                                                                              and is still
+                                                                              on the increase with 85% of
+                                                                              working adults (May 2020) preferring a
+                                                                              hybrid approach
+                                                                              of working at home and office in
+                                                                              the UK. </p>
+                                                                        </td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                   <table cellpadding="0" cellspacing="0" align="right" width="300">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td style="padding-bottom: 35px;" class="adapt_pb20">
+                                                               <table>
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td style="padding-bottom: 20px;">
+                                                                           <a href="#" target="_blank"><img
+                                                                                 src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/image_182_1.jpg"
+                                                                                 alt="" class="content_img" width="300"
+                                                                                 style="border-radius: 15px;"></a>
+                                                                        </td>
+                                                                     </tr>
+                                                                     <tr>
+                                                                        <td>
+                                                                           <a href="#" target="_blank"><img
+                                                                                 src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/image_183_1.jpg"
+                                                                                 alt="" class="content_img" width="300"
+                                                                                 style="border-radius: 15px;"></a>
+                                                                        </td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td style="padding-bottom: 30px;" class="adapt_pb20">
+                                                   <p>With the rise of companies implementing a hybrid work environment,
+                                                      this article will touch on the benefits and challenges of a hybrid
+                                                      workplace. Working in the
+                                                      office from 9 to 5 has traditionally been the norm, however
+                                                      studies show that in the past few
+                                                      years the number of office employees working from home in 2020
+                                                      have increased to 37% on
+                                                      average from 27% in 2019.</p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td align="center">
+                           <a href="#" target="_blank"><img
+                                 src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/image_184_1.jpg"
+                                 alt="" class="content_img" style="border-radius: 15px 15px 0 0;" width="680"></a>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td align="center" class="responsive_padding"
+                           style="background-color: #20272D;padding-top: 45px; padding-left: 60px;">
+                           <table cellpadding="0" cellspacing="0">
+                              <tbody>
+                                 <tr>
+                                    <td width="620" align="left" style="padding-bottom: 50px;" class="adapt_pb25">
+                                       <table cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="width: 145px;"
+                                                   class="author_img_container adapt_pr10 va_base">
+                                                   <a href="#" target="_blank">
+                                                      <img
+                                                         src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/image_185_1.png"
+                                                         alt="Alex Kova" width="122" class="author_img">
+                                                   </a>
+                                                </td>
+                                                <td>
+                                                   <table cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td style="padding-bottom: 15px;" colspan="2"
+                                                               class="adapt_pb0">
+                                                               <p style="font-size: 25px;
+                                                               font-weight: 700;color: #fff;" class="author_name">Alex
+                                                                  Kova</p>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td style="padding-bottom: 15px;" colspan="2">
+                                                               <p style="font-size: 17px;
+                                                               line-height: 29px;
+                                                               font-weight: 700;color: #fff;">Project director of Kova
+                                                                  UK</p>
+                                                            </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td align="left" style="padding-right: 25px;"
+                                                               class="adapt_w_auto adapt_disp_inl_block adapt_pr10">
+                                                               <table cellpadding="0" cellspacing="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td style="padding-right: 7px;"><a
+                                                                              href="mailto:info@kova.uk.com"
+                                                                              target="_blank"> <img
+                                                                                 src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/email_1_2.png"
+                                                                                 alt="" width="15">
+                                                                           </a></td>
+                                                                        <td><a href="mailto:info@kova.uk.com" style="font-size: 14px;
+                                                                           line-height: 20px;
+                                                                           color: #fff;" class="author_mail">
+                                                                              info@kova.uk.com
+                                                                           </a></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                            </td>
+                                                            <td align="left" class="adapt_w_auto adapt_disp_inl_block">
+                                                               <table cellpadding="0" cellspacing="0">
+                                                                  <tbody>
+                                                                     <tr>
+                                                                        <td style="padding-right: 7px;"><a
+                                                                              href="tel:02081686241"> <img
+                                                                                 src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/telephone_3_3.png"
+                                                                                 alt="" width="15">
+                                                                           </a></td>
+                                                                        <td><a href="tel:02081686241" style="font-size: 14px;
+                                                                           line-height: 20px;
+                                                                           color: #fff;" class="author_tel">
+                                                                              0208 168 6241
+                                                                           </a></td>
+                                                                     </tr>
+                                                                  </tbody>
+                                                               </table>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td width="620" align="left" style="padding-bottom: 30px;">
+                                       <table cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="padding-right: 15px;">
+                                                   <table cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td align="center" bgcolor="#0AB9D1">
+                                                               <a href="https://kova.uk.com/contact/"
+                                                                  class="primary_btn" target="_blank" style="font-size: 14px;
+                                                   font-weight: 600;
+                                                   line-height: 18px;
+                                                   color: #fff;
+                                                   padding: 9px 45px;
+                                                   border: 1px solid #0AB9D1;
+                                                   text-decoration: none;
+                                                   transition: all ease-in-out .3s;
+                                                   display: inline-block;
+                                                   font-family: 'Montserrat', sans-serif;
+                                                   text-align: center;background-color: #0AB9D1;">Get in touch</a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                                <td align="left" style="padding-right: 15px;">
+                                                   <table cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td align="center" bgcolor="#20272D">
+                                                               <a href="https://kova.uk.com/what-do-you-need-to-know-to-create-the-hybrid-office/"
+                                                                  class="secondary_btn" target="_blank" style="font-size: 14px;
+                                                      font-weight: 600;
+                                                      line-height: 18px;
+                                                      color: #fff;
+                                                      padding: 9px 45px;
+                                                      border: 1px solid #0AB9D1;
+                                                      text-decoration: none;
+                                                      transition: all ease-in-out .3s;
+                                                      display: inline-block;
+                                                      font-family: 'Montserrat', sans-serif;
+                                                      text-align: center;">Read full
+                                                                  article</a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="background-color: #20272D;">
+                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" width="560">
+                                       <table border="0" cellpadding="0" width="100%"
+                                          style="border-top:1px solid #8A8A8A">
+                                          <tbody>
+                                             <tr>
+                                                <td><span></span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table cellpadding="0" cellspacing="0" class="footer_part">
+                  <tbody>
+                     <tr>
+                        <td class="responsive_padding"
+                           style="padding-bottom: 40px;padding-top: 30px;padding-left: 60px;padding-right: 30px; background-color: #20272D;"
+                           align="center">
+                           <table cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                 <tr>
+                                    <td width="590" align="center" style="padding-bottom: 30px;" class="adapt_pb20">
+                                       <table cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="width: 160px; padding-right: 30px;"
+                                                   class="adapt_w_auto adapt_disp_block adapt_pb20 social_list">
+                                                   <table cellpadding="0" cellspacing="0">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td align="center" style="padding-right: 7px;"
+                                                               class="adapt_disp_inl_block">
+                                                               <a href="https://www.facebook.com/kovarefurbishments"
+                                                                  target="_blank">
+                                                                  <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/group_3673605_1.png"
+                                                                     alt="" width="25" class="social_list_img"> </a>
+                                                            </td>
+                                                            <td align="center" style="padding-right: 7px;"
+                                                               class="adapt_disp_inl_block">
+                                                               <a href="https://twitter.com/KOVAGroup/" target="_blank">
+                                                                  <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/group_3673604_1.png"
+                                                                     alt="" width="25" class="social_list_img"> </a>
+                                                            </td>
+                                                            <td align="center" style="padding-right: 7px;"
+                                                               class="adapt_disp_inl_block">
+                                                               <a href="https://uk.linkedin.com/in/alex-kova-68672b19"
+                                                                  target="_blank">
+                                                                  <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/group_3673608_1.png"
+                                                                     alt="" width="25" class="social_list_img"> </a>
+                                                            </td>
+                                                            <td align="center" class="adapt_disp_inl_block">
+                                                               <a href="https://www.youtube.com/user/kovauk?feature=mhee"
+                                                                  target="_blank">
+                                                                  <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/group_3673607_1.png"
+                                                                     alt="" width="25" class="social_list_img"> </a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                                <td align="left" class="adapt_disp_block adapt_pb20">
+                                                   <table cellpadding="0" cellspacing="0" class="adapt_w_auto">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td style="padding-right: 10px;">
+                                                               <a href="tel:02081686241" style="text-decoration: none;">
+                                                                  <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/telephone_3_3.png"
+                                                                     alt="" width="12">
+                                                               </a>
+                                                            </td>
+                                                            <td>
+                                                               <a href="tel:02081686241" style="font-size: 12px;
+                                                                  line-height: 18px;
+                                                                  color: #fff;" class="adapt_fs13">
+                                                                  0208 168 6241
+                                                               </a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                                <td align="right" class="adapt_disp_inl_block">
+                                                   <table cellpadding="0" cellspacing="0" class="adapt_w_auto">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td style="padding-right: 10px;">
+                                                               <a href="#" style="text-decoration: none;"> <img
+                                                                     src="https://hlaebu.stripocdn.email/content/guids/CABINET_22e5852568ee8eb900db1ab4c510c864/images/vector_4.png"
+                                                                     alt="" width="10">
+                                                               </a>
+                                                            </td>
+                                                            <td>
+                                                               <div style="font-size: 12px;line-height: 18px;text-decoration: underline;
+                                                               color: #fff;" class="adapt_fs13">
+                                                                  <a href="#" style="font-size: 12px;line-height: 18px;text-decoration: underline;
+                                                                  color: #fff;" class="adapt_fs13">
+                                                                     London, United Kingdom
+                                                                  </a>
+                                                               </div>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td width="590" align="center">
+                                       <table cellpadding="0" cellspacing="0" width="100%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="width: 160px; padding-right: 30px;"
+                                                   class="adapt_disp_block adapt_pb20">
+                                                   <p style="font-size: 12px;
+                                                   color: #919CA5;line-height: 18px;">Copyright © 2022 Kova UK. All
+                                                      rights reserved.</p>
+                                                </td>
+                                                <td align="left" colspan="2" class="adapt_disp_block">
+                                                   <p style="font-size: 12px;
+                                                   color: #919CA5;line-height: 18px;">Want to change how you receive
+                                                      these emails? You can <a href="*|UPDATE_PROFILE|*" target="_blank"
+                                                         style="color: #919CA5;
+                                                         font-size: 12px;
+                                                         text-decoration: underline;">update your
+                                                         preferences</a>
+                                                      or <a href="*|UNSUB|*" target="_blank" style="color: #919CA5;
+                                                      font-size: 12px;
+                                                      text-decoration: underline;">unsubscribe</a></p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</body>
+
+</html>
